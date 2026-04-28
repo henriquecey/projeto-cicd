@@ -1,0 +1,20 @@
+name: CI
+
+on:
+  push:
+    branches: [ principal, desenvolvedor ]
+  pull_request:
+    branches: [ principal, desenvolvedor ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: List project files
+        run: |
+          echo "Arquivos do projeto:"
+          ls -R
