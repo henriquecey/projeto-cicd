@@ -6,3 +6,5 @@ Testando CI/CD #2
 Testando CI/CD #3
 Testando CI/CD #4
 teste alerta
+alteração para testes
+rodando testes via PR
